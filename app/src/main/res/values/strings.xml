@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ModernLogin</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string-array name="problem">
+        <item> Lungs</item>
+        <item> Heart</item>
+        <item> Liver</item>
+        <item> Neuro</item>
+        <item> Ortho</item>
+        <item> Gastrointestinal</item>
+        <item> Eyes/Ears/Nose</item>
+        <item> Others</item>
+    </string-array>
+
+    <string-array name="doctor">
+        <item> Specialist</item>
+        <item> General Physician</item>
+    </string-array>
+
+
+</resources>
