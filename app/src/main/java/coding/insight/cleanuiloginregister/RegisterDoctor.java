@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +17,7 @@ import android.view.WindowManager;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -57,14 +59,19 @@ public class RegisterDoctor extends AppCompatActivity {
         docreg = findViewById(R.id.doctorRegister);
         Doctime = findViewById(R.id.Doctime);
 
-        ArrayAdapter<CharSequence> adapterfordoctime = ArrayAdapter.createFromResource(this, R.array.DoctorTime, android.R.layout.simple_spinner_item);
-        adapterfordoctime.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        Doctime.setAdapter(adapterfordoctime);
+        ArrayAdapter<String> time_adapter = new ArrayAdapter<>( this ,
+                R.layout.support_simple_spinner_dropdown_item , getResources().getStringArray(R.array.DoctorTime));
+        Doctime.setAdapter(time_adapter);
 
-        Doctime.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        Doctime.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //Selectedtime = getResources().getStringArray(R.array.DoctorTime)[i];
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Selectedtime = getResources().getStringArray(R.array.DoctorTime)[position];
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                Selectedtime = getResources().getStringArray(R.array.DoctorTime)[0];
             }
         });
 
