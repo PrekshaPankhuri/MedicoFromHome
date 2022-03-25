@@ -25,7 +25,7 @@ public class HomeScreen extends AppCompatActivity {
 
         buttonhos = findViewById(R.id.buttonhos);
         buttonco = findViewById(R.id.btno2);
-        buttonblood = findViewById(R.id.btnvacc);
+        //buttonblood = findViewById(R.id.btnvacc);
 
         buttonhos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,19 +34,19 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
-        buttonblood.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),BloodDonation.class));
-            }
-        });
+//        buttonblood.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(),BloodDonation.class));
+//            }
+//        });
 
-        buttonco.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),CovidHelp.class));
-            }
-        });
+//        buttonco.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(),CovidHelp.class));
+//            }
+//        });
 
     }
     private void changeStatusBarColor() {
