@@ -30,6 +30,7 @@ public class DoctorAdapter extends FirebaseRecyclerAdapter<DoctorModel,DoctorAda
         holder.DocExper.setText("Expertise: " + model.getExpertise());
         holder.DocType.setText("DocHospital: " + model.getHospital());
         holder.DocTime.setText("DocTime: " + model.getDoctorTime());
+        holder.DocSpecification.setText("Doctor Specification : " + model.getSpecification());
     }
 
     @NonNull
@@ -40,7 +41,7 @@ public class DoctorAdapter extends FirebaseRecyclerAdapter<DoctorModel,DoctorAda
     }
 
     class doctorviewholder extends RecyclerView.ViewHolder {
-        TextView DocName,DocExper,DocType,DocTime;
+        TextView DocName,DocExper,DocType,DocTime ,DocSpecification;
         public doctorviewholder(View view) {
 
             super(view);
@@ -49,6 +50,7 @@ public class DoctorAdapter extends FirebaseRecyclerAdapter<DoctorModel,DoctorAda
             DocExper = view.findViewById(R.id.doctorExper);
             DocType = view.findViewById(R.id.DoctType);
             DocTime = view.findViewById(R.id.DoctTime);
+            DocSpecification = view.findViewById(R.id.DocSpecification);
 
         }
     }
