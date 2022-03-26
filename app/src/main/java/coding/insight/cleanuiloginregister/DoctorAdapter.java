@@ -44,11 +44,11 @@ public class DoctorAdapter extends FirebaseRecyclerAdapter<DoctorModel,DoctorAda
 
     @Override
     protected void onBindViewHolder(@NonNull DoctorAdapter.doctorviewholder holder, int position, @NonNull DoctorModel model) {
-        holder.DocName.setText("Name: "+ model.getName());
-        holder.DocExper.setText("Expertise: " + model.getExpertise());
-        holder.DocHospital.setText("DocHospital: " + model.getHospital());
-        holder.DocTime.setText("DocTime: " + model.getDoctorTime());
-        holder.DocSpecification.setText("Doctor Specification : " + model.getSpecification());
+        holder.DocName.setText(model.getName());
+        holder.DocExper.setText(model.getExpertise());
+        holder.DocHospital.setText(model.getHospital());
+        holder.DocTime.setText(model.getDoctorTime());
+        holder.DocSpecification.setText(model.getSpecification());
         final String[] selectedTime = {""};
 
         holder.editBtn.setOnClickListener(new View.OnClickListener() {
@@ -73,10 +73,10 @@ public class DoctorAdapter extends FirebaseRecyclerAdapter<DoctorModel,DoctorAda
                         R.layout.support_simple_spinner_dropdown_item , holder.DocTime.getResources().getStringArray(R.array.DoctorTime));
                 Doctimespinner.setAdapter(time_adapter);
 
-                HospitalName.setText(holder.DocHospital.getText().toString().substring(13));
-                expertise_txt.setText(holder.DocExper.getText().toString().substring(11));
-                specification_txt.setText(holder.DocSpecification.getText().toString().substring(23));
-                txtDocName.setText(holder.DocName.getText().toString().substring(6));
+                HospitalName.setText(holder.DocHospital.getText().toString());
+                expertise_txt.setText(holder.DocExper.getText().toString());
+                specification_txt.setText(holder.DocSpecification.getText().toString());
+                txtDocName.setText(holder.DocName.getText().toString());
 
                 List<String> time = Arrays.asList(
                         view.getResources().getStringArray(R.array.DoctorTime)
