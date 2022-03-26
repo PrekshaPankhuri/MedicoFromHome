@@ -3,15 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"    >
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Update Details"
         android:background="@color/colorAccent"
-        android:textSize="25dp"
         android:gravity="center"
+        android:text="Update Details"
         android:textColor="#FFF"
-        />
+        android:textSize="25dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         android:textSize="20sp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:text="Name"
+        android:text="Doctor's Hospital"
         />
 
     <EditText
@@ -37,34 +37,29 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="20sp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:text="Number"
-        />
+        android:gravity="center"
+        android:text="Time"
+        android:textSize="20sp" />
 
-    <EditText
+    <Spinner
+        android:id="@+id/Doctime"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:hint=""/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:textSize="21dp"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/txtNumber"
-        />
-
-     <Button
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:layout_marginLeft="25dp"
-         android:layout_marginRight="25dp"
-         android:layout_marginTop="10dp"
-         android:textSize="21dp"
-         android:background="@drawable/rounded"
-         android:gravity="center"
-         android:id="@+id/btnuupdate"
-         android:text="Update" />
+        android:id="@+id/btnuupdate"
+        android:text="Update" />
 
 
 

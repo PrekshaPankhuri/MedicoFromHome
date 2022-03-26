@@ -3,21 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/drawable/add_new.xml" value="0.198" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/drawable/button_background_blue.xml" value="0.198" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/drawable/ic_back_img.xml" value="0.198" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/drawable/ic_facebook.xml" value="0.198" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/drawable/ic_google_plus.xml" value="0.198" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.198" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.198" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/drawable/ic_search.xml" value="0.198" />
         <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/drawable/ic_side_bg.xml" value="0.2" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/drawable/rounded.xml" value="0.198" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/activity_add.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/activity_admin_hospital_data.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/activity_blood_donation.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/activity_covid_help.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/activity_covidbeds.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/activity_doctors_update.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/activity_hospital_appointment.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/activity_hospital_appointment1.xml" value="0.23229166666666667" />
@@ -26,11 +12,18 @@
         <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/activity_register.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/activity_register_doctor.xml" value="0.264" />
         <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/activity_user_data.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/adminhos_item.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/update_popup.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/layout/user_item.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/91910/Downloads/mednew5/Login-and-Register-UI-UX-Design-Android-Studio-XML-master/app/src/main/res/menu/search.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/kdivy/Desktop/newproject/app/src/main/res/layout/activity_doctor_data.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/kdivy/Desktop/newproject/app/src/main/res/layout/activity_doctors_update.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/kdivy/Desktop/newproject/app/src/main/res/layout/activity_home_screen.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/kdivy/Desktop/newproject/app/src/main/res/layout/activity_main.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/kdivy/Desktop/newproject/app/src/main/res/layout/activity_register.xml" value="0.12158054711246201" />
         <entry key="..\:/Users/kdivy/Desktop/newproject/app/src/main/res/layout/activity_register_doctor.xml" value="0.25" />
+        <entry key="..\:/Users/kdivy/Desktop/newproject/app/src/main/res/layout/activity_user_data.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/kdivy/Desktop/newproject/app/src/main/res/layout/doctor_item.xml" value="0.2" />
+        <entry key="..\:/Users/kdivy/Desktop/newproject/app/src/main/res/layout/update_doc_popup.xml" value="0.264" />
+        <entry key="..\:/Users/kdivy/Desktop/newproject/app/src/main/res/layout/update_popup.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/kdivy/Desktop/newproject/app/src/main/res/layout/user_item.xml" value="0.12158054711246201" />
       </map>
     </option>
   </component>
