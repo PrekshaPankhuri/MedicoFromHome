@@ -104,8 +104,6 @@ public class UserAdapter extends FirebaseRecyclerAdapter<userModel,UserAdapter.u
                     public void onClick(DialogInterface dialogInterface, int i) {
                         FirebaseDatabase.getInstance().getReference().child("users").child(getRef(holder.getLayoutPosition()).getKey()).removeValue();
 
-
-
                     }
                 });
                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
