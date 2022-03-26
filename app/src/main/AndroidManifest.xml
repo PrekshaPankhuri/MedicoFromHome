@@ -21,7 +21,9 @@
             android:exported="false" />
         <activity
             android:name=".AdminHospitalData"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+        />
         <activity
             android:name=".userData"
             android:exported="false" />
