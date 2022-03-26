@@ -82,7 +82,7 @@ public class DoctorAdapter extends FirebaseRecyclerAdapter<DoctorModel,DoctorAda
                         view.getResources().getStringArray(R.array.DoctorTime)
                 );
 
-                Doctimespinner.setSelection(time.indexOf(new String(holder.DocTime.getText().toString().substring(9))));
+                Doctimespinner.setSelection(time.indexOf(new String(holder.DocTime.getText().toString())));
                 Doctimespinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

@@ -93,7 +93,7 @@ public class AdminHosAdapter extends FirebaseRecyclerAdapter<AdminHodpitalModel,
                         map.put("BloodBank",HospitalBB.getText().toString());
 
 
-                        FirebaseDatabase.getInstance().getReference().child("users")
+                        FirebaseDatabase.getInstance().getReference().child("hospital")
                                 .child(getRef(holder.getLayoutPosition()).getKey()).updateChildren(map)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
