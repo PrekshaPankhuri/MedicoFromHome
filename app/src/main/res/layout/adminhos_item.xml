@@ -93,6 +93,26 @@
             android:textColor="#000"
             android:padding="10dp"
             android:layout_below="@+id/AHosCylinder" />
+
+        <LinearLayout
+            android:layout_below="@+id/AHosBB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        <Button
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btnEdit"/>
+
+        <Button
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btnDelete"/>
+        </LinearLayout>
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

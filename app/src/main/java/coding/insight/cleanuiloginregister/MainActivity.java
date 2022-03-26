@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
-    Button userdata , docdata;
+    Button userdata , docdata, hosdata;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
         userdata = findViewById(R.id.buttonuser);
         docdata = findViewById(R.id.buttonup);
+        hosdata = findViewById(R.id.buttonhosp);
+
 
 
         userdata.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this , activity_doctor_data.class);
+                startActivity(intent);
+            }
+        });
+
+        hosdata.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AdminHospitalData.class);
                 startActivity(intent);
             }
         });
