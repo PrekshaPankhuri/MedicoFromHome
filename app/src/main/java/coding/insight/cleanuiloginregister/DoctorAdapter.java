@@ -74,9 +74,9 @@ public class DoctorAdapter extends FirebaseRecyclerAdapter<DoctorModel,DoctorAda
                 Doctimespinner.setAdapter(time_adapter);
 
                 HospitalName.setText(holder.DocHospital.getText().toString().substring(13));
-                expertise_txt.setText(holder.DocExper.getText());
-                specification_txt.setText(holder.DocSpecification.getText());
-                txtDocName.setText(holder.DocName.getText());
+                expertise_txt.setText(holder.DocExper.getText().toString().substring(11));
+                specification_txt.setText(holder.DocSpecification.getText().toString().substring(23));
+                txtDocName.setText(holder.DocName.getText().toString().substring(6));
 
                 List<String> time = Arrays.asList(
                         view.getResources().getStringArray(R.array.DoctorTime)
