@@ -89,7 +89,7 @@
                     <Button
                         android:id="@+id/buttonuser"
                         style="@style/loginButton"
-                        android:layout_width="178dp"
+                        android:layout_width="0dp"
                         android:layout_height="52dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginEnd="8dp"
