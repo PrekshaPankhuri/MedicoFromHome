@@ -34,11 +34,13 @@ public class userData extends AppCompatActivity {
         useradapter = new UserAdapter(options);
         recyclerview.setAdapter(useradapter);
 
-        floatingActionButton = (FloatingActionButton)findViewById(R.id.floatingActionButton);
+        floatingActionButton = findViewById(R.id.floatingActionButton);
+
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),AddActivity.class));
+                Intent intent = new Intent(userData.this, RegisterActivity.class);
+                startActivity(intent);
             }
         });
     }
