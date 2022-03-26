@@ -18,10 +18,81 @@
             android:id="@+id/AHosName"
             android:text="Name"
             android:textStyle="bold"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textColor="#000"
             android:padding="10dp"
             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AHosEmail"
+            android:text="Email"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_below="@+id/AHosName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AHosNumber"
+            android:text="Number"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_below="@+id/AHosEmail" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AHosAddress"
+            android:text="Address"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_below="@+id/AHosNumber" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AHosCity"
+            android:text="City"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_below="@+id/AHosAddress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AHosBeds"
+            android:text="Beds"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_below="@+id/AHosCity" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AHosCylinder"
+            android:text="Cylinders"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_below="@+id/AHosBeds" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AHosBB"
+            android:text="BloodBank"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_below="@+id/AHosCylinder" />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

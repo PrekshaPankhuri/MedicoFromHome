@@ -107,12 +107,14 @@ public class RegisterDoctor extends AppCompatActivity {
 
                 if(flag){
                     docDtabaseref= FirebaseDatabase.getInstance().getReference().child("doctors").push();
+                    String DocID = docDtabaseref.getKey();
                     HashMap DocInfo=new HashMap();
                     DocInfo.put("Name",Name);
                     DocInfo.put("Hospital",Hospital);
                     DocInfo.put("Specification",Specification);
                     DocInfo.put("Expertise",Expertise);
                     DocInfo.put("DoctorTime",Selectedtime);
+                    DocInfo.put("ID",DocID);
 
                     docDtabaseref.setValue(DocInfo).addOnCompleteListener(new OnCompleteListener() {
                         @Override

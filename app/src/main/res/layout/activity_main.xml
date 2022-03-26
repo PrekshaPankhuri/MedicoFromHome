@@ -63,7 +63,7 @@
                         app:srcCompat="@drawable/ic_hospitals1" />
 
                     <Button
-                        android:id="@+id/buttonvi"
+                        android:id="@+id/buttonhosp"
                         style="@style/loginButton"
                         android:layout_width="178dp"
                         android:layout_height="52dp"

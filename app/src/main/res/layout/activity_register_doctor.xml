@@ -69,7 +69,7 @@
                             android:id="@+id/DoctorRegName"
                             style="@style/modifiedEditText"
                             android:hint="Name"
-                            android:inputType="textPersonName"
+                            android:inputType="text"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,21 +77,21 @@
                         android:id="@+id/Doctorspecification"
                         style="@style/modifiedEditText"
                         android:hint="Specification"
-                        android:inputType="textEmailAddress"
+                        android:inputType="text"
                         android:maxLines="1" />
 
                     <EditText
                         android:id="@+id/Doctorhospital"
                         style="@style/modifiedEditText"
                         android:hint="Hospital"
-                        android:inputType="textPassword"
+                        android:inputType="text"
                         android:maxLines="1" />
 
                     <EditText
                         android:id="@+id/doctorExpertise"
                         style="@style/modifiedEditText"
                         android:hint="Expertise"
-                        android:inputType="textPersonName"
+                        android:inputType="text"
                         android:maxLines="1" />
 
 

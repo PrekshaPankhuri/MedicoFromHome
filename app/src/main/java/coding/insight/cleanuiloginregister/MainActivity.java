@@ -9,6 +9,7 @@ import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
     Button userdata;
+    Button AhData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,10 +17,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         userdata = findViewById(R.id.buttonuser);
+        AhData = findViewById(R.id.buttonhosp);
         userdata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, userData.class);
+                startActivity(intent);
+            }
+        });
+
+        AhData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AdminHospitalData.class);
                 startActivity(intent);
             }
         });
