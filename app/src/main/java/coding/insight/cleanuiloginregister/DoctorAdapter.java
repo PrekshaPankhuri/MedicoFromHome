@@ -62,7 +62,11 @@ public class DoctorAdapter extends FirebaseRecyclerAdapter<DoctorModel,DoctorAda
                 View v = dialogPlus.getHolderView();
                 Spinner Doctimespinner = v.findViewById(R.id.Doctime);
                 EditText HospitalName = v.findViewById(R.id.txtName);
+                EditText expertise_txt = v.findViewById(R.id.expertise_txt);
+                EditText specification_txt = v.findViewById(R.id.specification_txt);
+                EditText txtDocName = v.findViewById(R.id.txtDocName);
                 Button btnUpdate = v.findViewById(R.id.btnuupdate);
+
 
 
                 ArrayAdapter<String> time_adapter = new ArrayAdapter<>( holder.DocTime.getContext() ,
@@ -94,10 +98,17 @@ public class DoctorAdapter extends FirebaseRecyclerAdapter<DoctorModel,DoctorAda
                 btnUpdate.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        String DoctorName = txtDocName.getText().toString();
+                        String Expertise = expertise_txt.getText().toString();
+                        String Specification = specification_txt.getText().toString();
+
                         String Hospitaltext = HospitalName.getText().toString();
                         Map<String,Object> map = new HashMap<>();
                         map.put("Hospital",Hospitaltext);
                         map.put("DoctorTime",selectedTime[0]);
+                        map.put("Name",DoctorName);
+                        map.put("Expertise",Expertise);
+                        map.put("Specification",Specification);
 
                         FirebaseDatabase.getInstance().getReference().child("doctors")
                                 .child(getRef(holder.getLayoutPosition()).getKey()).updateChildren(map)
