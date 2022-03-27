@@ -18,7 +18,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activity_doctor_data"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".AdminHospitalData"
             android:exported="false"
@@ -26,7 +27,8 @@
         />
         <activity
             android:name=".userData"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".RegisterDoctor"
             android:exported="false" />
