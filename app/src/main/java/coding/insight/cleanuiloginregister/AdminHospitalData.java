@@ -4,17 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.SearchView;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class AdminHospitalData extends AppCompatActivity {
     RecyclerView recyclerViewh;
     AdminHosAdapter AhAdapter;
+    FloatingActionButton addHos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,8 @@ public class AdminHospitalData extends AppCompatActivity {
         recyclerViewh = (RecyclerView)findViewById(R.id.ahrv);
         recyclerViewh.setLayoutManager(new LinearLayoutManager(this));
 
+            addHos=findViewById(R.id.floatingActionButton);
+
 
         FirebaseRecyclerOptions<AdminHodpitalModel> options =
                 new FirebaseRecyclerOptions.Builder<AdminHodpitalModel>()
@@ -32,6 +38,14 @@ public class AdminHospitalData extends AppCompatActivity {
 
         AhAdapter = new AdminHosAdapter(options);
         recyclerViewh.setAdapter(AhAdapter);
+
+        addHos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminHospitalData.this, HospitalRegister.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
